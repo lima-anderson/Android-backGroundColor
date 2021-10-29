@@ -26,8 +26,12 @@ class MainActivity : AppCompatActivity() {
 
 
         this.layout.setOnClickListener{
-            layout.setBackgroundColor(Color.rgb(Cores().r(), Cores().g(), Cores().b()))
-            this.tvNomeDaCor.text = "rgb(" + Cores().r().toString() + ", " + Cores().g().toString() + ", " +  Cores().b().toString() + ")"
+            var vermelho = Cores().r()
+            var verde = Cores().g()
+            var azul = Cores().b()
+
+            layout.setBackgroundColor(Color.rgb(vermelho, verde, azul))
+            this.tvNomeDaCor.text = "rgb(" + vermelho.toString() + ", " + verde.toString() + ", " +  azul.toString() + ")"
         }
     }
 
